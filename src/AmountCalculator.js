@@ -16,8 +16,8 @@ export default function AmountCalculator() {
             onChange={(e) => setRate(parseInt("0" + e.target.value, 10))}
           />{" "}
         </div>
-      </div>
-      <div className="formBox">
+        {/* </div>
+      <div className="formBox"> */}
         <label>Invested Amount</label>{" "}
         <div className="inputContainers">
           <input
@@ -27,8 +27,8 @@ export default function AmountCalculator() {
             }
           />{" "}
         </div>
-      </div>
-      <div className="formBox">
+        {/* </div>
+      <div className="formBox"> */}
         <label>Invested Years</label>{" "}
         <div className="inputContainers">
           <input
@@ -36,9 +36,9 @@ export default function AmountCalculator() {
             onChange={(e) => setYears(parseInt("0" + e.target.value, 10))}
           />{" "}
         </div>
-      </div>
+        {/* </div>
 
-      <div className="formBox">
+      <div className="formBox"> */}
         <button
           className="btn"
           onClick={() => setResult(Calc.interest(years, rate, investedAmount))}

@@ -18,8 +18,8 @@ export default function RateCalculator() {
             }
           />{" "}
         </div>
-      </div>
-      <div className="formBox">
+        {/* </div>
+      <div className="formBox"> */}
         <label>Received Amount</label>{" "}
         <div className="inputContainers">
           <input
@@ -29,8 +29,8 @@ export default function RateCalculator() {
             }
           />{" "}
         </div>
-      </div>
-      <div className="formBox">
+        {/* </div>
+      <div className="formBox"> */}
         <label>Invested Years</label>{" "}
         <div className="inputContainers">
           <input
@@ -38,9 +38,9 @@ export default function RateCalculator() {
             onChange={(e) => setYears(parseInt("0" + e.target.value, 10))}
           />{" "}
         </div>
-      </div>
+        {/* </div>
 
-      <div className="formBox">
+      <div className="formBox"> */}
         <button
           className="btn"
           onClick={() =>

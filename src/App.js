@@ -28,18 +28,18 @@ export default function App() {
         </p>
 
         <div className={`selectCalc`}>
-          <span
+          <div
             className={`normal ${calc === "amount" ? "selected" : ""}`}
             onClick={() => calculate("amount")}
           >
             Amount
-          </span>
-          <span
+          </div>
+          <div
             className={`normal ${calc === "rate" ? "selected" : ""}`}
             onClick={() => calculate("rate")}
           >
             Rate
-          </span>
+          </div>
         </div>
         <div className="calcContainer">
           {calc === "amount" ? <AmountCalculator /> : <RateCalculator />}
