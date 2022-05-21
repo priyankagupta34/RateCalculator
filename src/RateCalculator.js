@@ -13,9 +13,7 @@ export default function RateCalculator() {
         <div className="inputContainers">
           <input
             value={investedAmount}
-            onChange={(e) =>
-              setInvestedAmount(parseInt("0" + e.target.value, 10))
-            }
+            onChange={(e) => setInvestedAmount(e.target.value)}
           />{" "}
         </div>
         {/* </div>
@@ -24,19 +22,14 @@ export default function RateCalculator() {
         <div className="inputContainers">
           <input
             value={receivedAmount}
-            onChange={(e) =>
-              setReceivedAmount(parseInt("0" + e.target.value, 10))
-            }
+            onChange={(e) => setReceivedAmount(e.target.value)}
           />{" "}
         </div>
         {/* </div>
       <div className="formBox"> */}
         <label>Invested Years</label>{" "}
         <div className="inputContainers">
-          <input
-            value={years}
-            onChange={(e) => setYears(parseInt("0" + e.target.value, 10))}
-          />{" "}
+          <input value={years} onChange={(e) => setYears(e.target.value)} />{" "}
         </div>
         {/* </div>
 
@@ -44,7 +37,13 @@ export default function RateCalculator() {
         <button
           className="btn"
           onClick={() =>
-            setResult(Calc.getRate(years, investedAmount, receivedAmount))
+            setResult(
+              Calc.getRate(
+                parseFloat(years),
+                parseFloat(investedAmount),
+                parseFloat(receivedAmount)
+              )
+            )
           }
         >
           Calculate

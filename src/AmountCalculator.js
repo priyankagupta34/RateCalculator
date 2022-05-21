@@ -9,12 +9,9 @@ export default function AmountCalculator() {
   return (
     <div>
       <div className="formBox">
-        <label>Rate Of Interest</label>{" "}
+        <label>Rate of Interest</label>{" "}
         <div className="inputContainers">
-          <input
-            value={rate}
-            onChange={(e) => setRate(parseInt("0" + e.target.value, 10))}
-          />{" "}
+          <input value={rate} onChange={(e) => setRate(e.target.value)} />{" "}
         </div>
         {/* </div>
       <div className="formBox"> */}
@@ -22,26 +19,29 @@ export default function AmountCalculator() {
         <div className="inputContainers">
           <input
             value={investedAmount}
-            onChange={(e) =>
-              setInvestedAmount(parseInt("0" + e.target.value, 10))
-            }
+            onChange={(e) => setInvestedAmount(e.target.value)}
           />{" "}
         </div>
         {/* </div>
       <div className="formBox"> */}
         <label>Invested Years</label>{" "}
         <div className="inputContainers">
-          <input
-            value={years}
-            onChange={(e) => setYears(parseInt("0" + e.target.value, 10))}
-          />{" "}
+          <input value={years} onChange={(e) => setYears(e.target.value)} />{" "}
         </div>
         {/* </div>
 
       <div className="formBox"> */}
         <button
           className="btn"
-          onClick={() => setResult(Calc.interest(years, rate, investedAmount))}
+          onClick={() =>
+            setResult(
+              Calc.interest(
+                parseFloat(years),
+                parseFloat(rate),
+                parseFloat(investedAmount)
+              )
+            )
+          }
         >
           Calculate
         </button>
