@@ -1,0 +1,96 @@
+.App {
+  font-family: sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+.formBox {
+  padding: 10px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  text-align: left;
+}
+
+.calcContainer {
+  width: 60vw;
+  box-shadow: 2px 2px 12px 0 grey;
+  border-radius: 5px;
+  padding: 20px;
+}
+
+.selectCalc {
+  /* background-color: rgb(215, 226, 250); */
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  box-shadow: 2px 2px 6px 0 grey;
+  position: relative;
+  /* bottom: -10px */
+}
+
+.actnblock {
+  margin: 15px;
+  margin-left: 10px;
+  /* text-align: center; */
+}
+
+.btn {
+  background-color: white;
+  box-shadow: 1px 1px 2px 0 gray;
+  border: none;
+  padding: 7px;
+  width: 100px;
+  border-radius: 3px;
+  border: 1px solid rgb(219, 219, 219);
+  font-weight: 600;
+  cursor: pointer;
+}
+
+input {
+  /* width: 100px; */
+  padding: 5px;
+  box-shadow: inset 1px 1px 2px 0 rgb(46, 45, 45);
+  border: 1px solid rgb(232, 232, 235);
+  border-radius: 3px;
+}
+
+label {
+  font-weight: 600;
+}
+
+.normal {
+  padding: 10px;
+  cursor: pointer;
+  position: relative;
+  background-color: white;
+  text-align: center;
+  border-bottom: 2px solid white;
+}
+
+.selected {
+  background-color: rgb(97, 95, 216);
+  color: white;
+  border-bottom: 2px solid black;
+}
+
+.inputContainers {
+  text-align: right;
+}
+
+.result {
+  text-align: end;
+  align-self: center;
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+p {
+  font-weight: 100;
+  width: 65vw;
+  line-height: 20px;
+  text-align: justify;
+  font-size: 0.9em;
+}
