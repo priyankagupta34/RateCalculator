@@ -8,7 +8,7 @@ export default function App() {
 
   return (
     <div className="App">
-      <div>
+      <div className="conts">
         <h1>
           Compount Interest?{" "}
           <span style={{ color: "blue" }} role="img" aria-label="emoji">
